@@ -21,3 +21,142 @@ body {
     --green-dark: #415D43;
     --green-dark-md: #111D13;
 }
+
+/*Header*/
+header {
+    background-color: var(--green-medium);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+p {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+h1, p {
+    color: var(--green-dark-md);
+}
+
+header #flex_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1.2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#header_heading_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/*Edit button
+Taken from https://uiverse.io/barisdogansutcu/lovely-walrus-42
+and edited to mach project
+*/
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: linear-gradient(to top, var(--green-dark) 0%, var(--green-dark-md) 100%);
+    border: solid 3px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 0px 0px 3px #ffffff00;
+    color: var(--green-light);
+    min-height: 43px;
+    padding: 0 13px 0 13px;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+  
+button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+  
+button:hover {
+    box-shadow: 0px 0px 0px 3px var(--green-dark);
+    cursor: pointer;
+}
+  
+button svg {
+    width: 16px;
+}
+
+/*Header input*/
+#input {
+    margin: 0;
+    border-top: 1px solid var(--green-medium-md);
+    border-right: none;
+    border-bottom: 1px solid var(--green-medium-md);
+    border-left: 1px solid var(--green-medium-md);
+    border-radius: 0.5rem 0 0 0.5rem;
+    box-shadow: inset 0 2px 6px var(--green-medium-md);
+    width: 90%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    height: 2.5rem;
+    transition: 0.3s;
+    color: var(--green-dark);
+    background-color: var(--green-light);
+}
+
+#input:hover {
+    border-top: 2px solid var(--green-medium-md);
+    border-right: none;
+    border-bottom: 2px solid var(--green-medium-md);
+    border-left: 2px solid var(--green-medium-md);
+}
+
+#input:focus {
+    outline: none;
+    border-top: 2px solid var(--green-dark);
+    border-right: none;
+    border-bottom: 2px solid var(--green-dark);
+    border-left: 2px solid var(--green-dark);
+}
+
+#input::placeholder {
+    color: var(--green-medium);
+}
+
+/*Header input add button*/
+.add_Btn {
+    border-top: 1px solid var(--green-dark);
+    border-right: 1px solid var(--green-dark);
+    border-bottom: 1px solid var(--green-dark);
+    border-left: none;
+    width: 10%;
+    background-image: linear-gradient(to top, var(--green-dark) 0%, var(--green-dark-md) 100%);
+    float: left;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-light);
+    box-shadow: 0px 0px 0px 3px #ffffff00;
+    background-clip: padding-box;
+  }
+
+  .add_Btn:hover {
+    background-image: linear-gradient(to top, var(--green-medium-md ) 0%, var(--green-dark) 100%);
+    cursor: pointer;
+    transition: 0.9s ease;
+}
+
