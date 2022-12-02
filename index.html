@@ -11,7 +11,26 @@
 </head>
 <body>
     <header>
-        main heading and controls
+        <div id="flex_container">
+            <div id="header_heading_container">
+                <div id="header_container">
+                    <h1>TO-DO-LIST</h1>
+                    <p>Boost you productivity with do-do list.</p>
+                </div>
+                <div id="edit_button_container">
+                    <button>
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#FFFFFF" height="24" width="24" viewBox="0 0 24 24">
+                            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                        </svg>
+                        Edit
+                    </button>
+                </div>
+            </div>
+            <div id="header_control_container">
+                <input type="text" id="input" placeholder="Create new list item...">
+                <span onclick="newElement" class="add_Btn">+</span>
+            </div>
+        </div>
     </header>
     <section>
         to do list items
