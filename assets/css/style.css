@@ -152,11 +152,68 @@ button svg {
     color: var(--green-light);
     box-shadow: 0px 0px 0px 3px #ffffff00;
     background-clip: padding-box;
-  }
+}
 
-  .add_Btn:hover {
+.add_Btn:hover {
     background-image: linear-gradient(to top, var(--green-medium-md ) 0%, var(--green-dark) 100%);
     cursor: pointer;
     transition: 0.9s ease;
 }
 
+/* Main section */
+#section_background_img{
+    background-image: url('../images/background_image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+#section_background_color{
+    background-color: #f2fff349;
+    height: 75vh;
+}
+
+/*List items */
+#list_conatiner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+ul li {
+    background: var(--green-dark);
+    color: var(--green-light);
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 18px;
+    transition: 0.5s;
+    margin: 1px 0;
+    border-radius: 0.5rem;
+    font-weight: 400; 
+  }
+  
+ul li:hover {
+    background: var(--green-dark-md);
+}
+  
+/* List items when clicked on to */
+ul li.checked {
+    background: transparent;
+    color: var(--green-dark-md);
+    text-decoration: line-through;
+}
+  
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: var(--green-dark-md);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
