@@ -11,3 +11,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Colors */
+:root {
+    --green-light: #F2FFF3;
+    --green-light-md: #A1CCA5;
+    --green-medium: #8FB996;
+    --green-medium-md: #709775;
+    --green-dark: #415D43;
+    --green-dark-md: #111D13;
+}
