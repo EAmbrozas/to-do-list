@@ -320,3 +320,37 @@ and edited
 .wrapper a:hover {
     color: var(--green-light);
 }
+
+/* Media query */
+@media only screen and (max-width:768px) {
+    /* Header */
+    header {
+        padding: 0 5vw;
+    }
+
+    header #flex_container {
+        gap: 0.5rem;
+        padding: 1rem 0 1rem 0;
+    }
+    /* Edit button */
+    button {
+        gap: 5px;
+        padding: 0 10px 0 10px;
+        letter-spacing: 1px;
+        min-height: 23px;
+    }
+    /* Main section */
+    #section_background_color {
+        padding: 0 5vw;
+    }
+
+    /* Text elements */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin-top: 0.5rem;
+    }
+
+}
