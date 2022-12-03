@@ -32,7 +32,13 @@ function addTodo(event) {
     function removeTodo(event) {
         todoItem.remove();
     }
-    
+
     // Removes input value when the add button is clicked on to
     input.value = '';
+
+    // Toggle list item to checked when clicked on to
+    todoItem.addEventListener("click", checked);
+    function checked() {
+        todoItem.classList.toggle('checked');
+    }
 }
