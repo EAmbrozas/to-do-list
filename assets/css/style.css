@@ -165,12 +165,13 @@ button svg {
     background-image: url('../images/background_image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
+    background-attachment: fixed;
+    min-height: 85vh;
 }
 
 #section_background_color{
     background-color: #f2fff349;
-    height: 75vh;
+    min-height: 85vh;
 }
 
 /* List items */
@@ -221,7 +222,10 @@ button svg {
 /* Footer */
 footer {
     background-color: var(--green-medium);
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 /* Footer icons 
 Taken from https://uiverse.io/david-mohseni/brave-shrimp-86
