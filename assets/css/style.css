@@ -22,7 +22,7 @@ body {
     --green-dark-md: #111D13;
 }
 
-/*Header*/
+/* Header */
 header {
     background-color: var(--green-medium);
 }
@@ -94,7 +94,7 @@ button svg {
     width: 16px;
 }
 
-/*Header input*/
+/* Header input */
 #input {
     margin: 0;
     border-top: 1px solid var(--green-medium-md);
@@ -132,7 +132,7 @@ button svg {
     color: var(--green-medium);
 }
 
-/*Header input add button*/
+/* Header input add button */
 .add_Btn {
     border-top: 1px solid var(--green-dark);
     border-right: 1px solid var(--green-dark);
@@ -173,14 +173,14 @@ button svg {
     height: 75vh;
 }
 
-/*List items */
+/* List items */
 #list_conatiner {
     max-width: 600px;
     margin: 0 auto;
     padding-top: 2rem;
 }
 
-ul li {
+#list_conatiner ul li {
     background: var(--green-dark);
     color: var(--green-light);
     cursor: pointer;
@@ -194,18 +194,18 @@ ul li {
     font-weight: 400; 
   }
   
-ul li:hover {
+  #list_conatiner ul li:hover {
     background: var(--green-dark-md);
 }
   
 /* List items when clicked on to */
-ul li.checked {
+#list_conatiner ul li.checked {
     background: transparent;
     color: var(--green-dark-md);
     text-decoration: line-through;
 }
   
-ul li.checked::before {
+#list_conatiner ul li.checked::before {
     content: '';
     position: absolute;
     border-color: var(--green-dark-md);
@@ -216,4 +216,103 @@ ul li.checked::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--green-medium);
+    
+}
+/* Footer icons 
+Taken from https://uiverse.io/david-mohseni/brave-shrimp-86
+and edited
+*/
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+.icon {
+    position: relative;
+    background: var(--green-light);
+    border-radius: 50%;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: var(--green-light);
+    color: var(--green-dark-md);
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--green-light);
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+  
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+  
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: var(--green-dark-md);
+    color: var(--green-light);
+}
+  
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: var(--green-dark-md);
+    color: var(--green-light);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: var(--green-dark-md);
+    color: var(--green-light);
+}
+.wrapper a {
+    color: var(--green-dark-md);
+}
+.wrapper a:hover {
+    color: var(--green-light);
 }
