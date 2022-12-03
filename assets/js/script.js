@@ -13,7 +13,13 @@ addBtn.addEventListener("click", addTodo);
 function addTodo(event) {
     const todoItem = document.createElement('li');
     todoItem.innerText = input.value;
-    listItems.appendChild(todoItem);
+    
+    // Alerts the user if the input field is empty
+    if(input.value === '') {
+        alert('You must write something to create new list item!');
+    } else {
+        listItems.appendChild(todoItem);
+    }
 
     // Appends remove button for each list item
     const removeBtn = document.createElement('button');
