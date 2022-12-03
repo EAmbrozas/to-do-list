@@ -32,4 +32,7 @@ function addTodo(event) {
     function removeTodo(event) {
         todoItem.remove();
     }
+    
+    // Removes input value when the add button is clicked on to
+    input.value = '';
 }
