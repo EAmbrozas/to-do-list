@@ -62,7 +62,7 @@ header #flex_container {
 Taken from https://uiverse.io/barisdogansutcu/lovely-walrus-42
 and edited to mach project
 */
-button {
+#edit_Btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,17 +80,17 @@ button {
     transition: all .5s ease;
 }
   
-button:active {
+#edit_Btn:active {
     transform: scale(.9);
     transition: all 100ms ease;
 }
   
-button:hover {
+#edit_Btn:hover {
     box-shadow: 0px 0px 0px 3px var(--green-dark);
     cursor: pointer;
 }
   
-button svg {
+#edit_Btn svg {
     width: 16px;
 }
 
@@ -193,6 +193,7 @@ button svg {
     margin: 1px 0;
     border-radius: 0.5rem;
     font-weight: 400; 
+    position: relative;
   }
   
   #list_conatiner ul li:hover {
@@ -217,6 +218,28 @@ button svg {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+}
+
+.remove_Btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: var(--green-light);
+    padding: 0 10px 0 10px;
+    border: 1px solid transparent;
+}
+.remove_Btn:hover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(168, 25, 25);
+    border: 1px solid var(--green-dark-md);
+    cursor: pointer;
 }
 
 /* Footer */
@@ -333,7 +356,7 @@ and edited
         padding: 1rem 0 1rem 0;
     }
     /* Edit button */
-    button {
+    #edit_Btn {
         gap: 5px;
         padding: 0 10px 0 10px;
         letter-spacing: 1px;
