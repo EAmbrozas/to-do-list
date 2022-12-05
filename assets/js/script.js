@@ -5,11 +5,13 @@ const listItems = document.querySelector('#list_items');
 const editBtn = document.querySelector('edit_Btn');
 const closeBtn = document.getElementById('close_Btn');
 const colorTheme = document.getElementById('color_theme');
+const fontFamily = document.getElementById('font_family');
 
 //Event Listeners
 addBtn.addEventListener("click", addTodo);
 closeBtn.addEventListener("click", hideEditMenu);
 colorTheme.addEventListener('change', changeTheme);
+fontFamily.addEventListener('change', changeFont);
 
 //Functions
 
@@ -77,5 +79,19 @@ function changeTheme() {
         document.documentElement.className = ('pink');
     } else {
         document.documentElement.className = ('green');
+    }
+}
+
+/**
+ * Changes body font depending on what font
+ * is selected in the font drop down menu
+ */
+function changeFont() {
+    if (fontFamily.value === 'poppins') {
+        document.body.style.fontFamily = "poppins";
+    } else if (fontFamily.value === 'oswald') {
+        document.body.style.fontFamily = "oswald";
+    } else {
+        document.body.style.fontFamily = "montserrat";
     }
 }
