@@ -170,7 +170,7 @@ and edited to mach project
     width: 10%;
     background-image: linear-gradient(to top, var(--dark) 0%, var(--dark-md) 100%);
     float: left;
-    font-size: 3rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0 0.5rem 0.5rem 0;
