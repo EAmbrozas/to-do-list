@@ -2,9 +2,12 @@
 const input = document.querySelector('#input');
 const addBtn = document.querySelector('.add_Btn');
 const listItems = document.querySelector('#list_items');
+const editBtn = document.querySelector('edit_Btn');
+const closeBtn = document.getElementById('close_Btn');
 
 //Event Listeners
 addBtn.addEventListener("click", addTodo);
+closeBtn.addEventListener("click", hideEditMenu);
 
 //Functions
 
@@ -42,3 +45,20 @@ function addTodo(event) {
         todoItem.classList.toggle('checked');
     }
 }
+
+/**
+ * Displayes edit menu when clicked on the edit button
+ */
+function showEditMenu() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+}
+
+/**
+ * Hide edit menu when clicked on the close button
+ */
+function hideEditMenu() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
