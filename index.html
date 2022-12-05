@@ -22,7 +22,7 @@
                 <!-- Main heading end -->
                 <!-- Edit button Taken from https://uiverse.io/barisdogansutcu/lovely-walrus-42-->
                 <div id="edit_button_container">
-                    <button id="edit_Btn">
+                    <button onclick="showEditMenu()" id="edit_Btn">
                         <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#FFFFFF" height="24" width="24" viewBox="0 0 24 24">
                             <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
                         </svg>
@@ -45,6 +45,26 @@
             <div id="list_conatiner">
                 <ul id="list_items"></ul>
             </div>
+       </div>
+       <!-- Popup -->
+       <div id="popup">
+            <div id="popup_menu">
+                <label for="color_theme">Color Theme</label>
+                <select name="color_theme" id="color_theme">
+                    <option value="original">Original</option>
+                    <option value="suny">Suny</option>
+                    <option value="nature">Nature</option>
+                    <option value="sky">Sky</option>
+                </select>
+                <label for="font_family">Font</label>
+                <select name="font_family" id="font_family">
+                    <option value="montserrat">Montserrat</option>
+                    <option value="poppins">Poppins</option>
+                    <option value="oswald">Oswald</option>
+                </select>
+                <button id="close_Btn">CLOSE</button>
+            </div>
+
        </div>
     </section>
     <!-- Footer -->
