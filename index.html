@@ -34,8 +34,7 @@
             <!-- Input with button -->
             <div id="header_control_container">
                 <input type="text" id="input" placeholder="Create new list item...">
-                <span class="add_Btn"><i class="fa-solid fa-plus"></i>
-                </span>
+                <span class="add_Btn"><i class="fa-solid fa-plus"></i></span>
             </div>
             <!-- Input with button end -->
         </div>
@@ -50,6 +49,7 @@
        <!-- Popup edit menu -->
        <div id="popup">
             <div id="popup_menu">
+                <!-- Color theme selection -->
                 <label for="color_theme">Color Theme</label>
                 <select name="color_theme" id="color_theme">
                     <option class="theme_option" onclick="changeTheme()" value="green">Green</option>
@@ -57,12 +57,15 @@
                     <option class="theme_option" onclick="changeTheme()" value="grey">Grey</option>
                     <option class="theme_option" onclick="changeTheme()" value="pink">Pink</option>
                 </select>
+                <!-- Color theme selection end -->
+                <!-- Font selection -->
                 <label for="font_family">Font</label>
                 <select name="font_family" id="font_family">
                     <option onclick="changeFont()" value="montserrat">Montserrat</option>
                     <option onclick="changeFont()" value="poppins">Poppins</option>
                     <option onclick="changeFont()" value="oswald">Oswald</option>
                 </select>
+                <!-- Font selection end -->
                 <button onclick="hideEditMenu" id="close_Btn">CLOSE</button>
             </div>
        </div>
