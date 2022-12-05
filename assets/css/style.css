@@ -13,18 +13,46 @@ body {
 }
 
 /* Colors */
-:root {
-    --green-light: #F2FFF3;
-    --green-light-md: #A1CCA5;
-    --green-medium: #8FB996;
-    --green-medium-md: #709775;
-    --green-dark: #415D43;
-    --green-dark-md: #111D13;
+:root,
+:root.green {
+    --light: #F2FFF3;
+    --light-md: #A1CCA5;
+    --medium: #8FB996;
+    --medium-md: #709775;
+    --dark: #415D43;
+    --dark-md: #111D13;
+}
+
+:root.blue {
+    --light: #effbff;
+    --light-md: #d7f7ff;
+    --medium: #41a0b8;
+    --medium-md: #38899d;
+    --dark: #1c444e;
+    --dark-md: #122d34;
+}
+
+:root.grey {
+    --light: #f6f6f6;
+    --light-md: #dadada;
+    --medium: #9c9c9c;
+    --medium-md: #6b6b6b;
+    --dark: #353535;
+    --dark-md: #181818;
+}
+
+:root.pink {
+    --light: #ffe2f0;
+    --light-md: #ffcee7;
+    --medium: #ff83c1;
+    --medium-md: #a3326b;
+    --dark: #511935;
+    --dark-md: #5c203e;
 }
 
 /* Header */
 header {
-    background-color: var(--green-medium);
+    background-color: var(--medium);
 }
 
 h1 {
@@ -39,7 +67,7 @@ p {
 }
 
 h1, p {
-    color: var(--green-dark-md);
+    color: var(--dark-md);
 }
 
 header #flex_container {
@@ -67,11 +95,11 @@ and edited to mach project
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-image: linear-gradient(to top, var(--green-dark) 0%, var(--green-dark-md) 100%);
+    background-image: linear-gradient(to top, var(--dark) 0%, var(--dark-md) 100%);
     border: solid 3px transparent;
     background-clip: padding-box;
     box-shadow: 0px 0px 0px 3px #ffffff00;
-    color: var(--green-light);
+    color: var(--light);
     min-height: 43px;
     padding: 0 13px 0 13px;
     border-radius: 0.5rem;
@@ -86,7 +114,7 @@ and edited to mach project
 }
   
 #edit_Btn:hover {
-    box-shadow: 0px 0px 0px 3px var(--green-dark);
+    box-shadow: 0px 0px 0px 3px var(--dark);
     cursor: pointer;
 }
   
@@ -97,49 +125,49 @@ and edited to mach project
 /* Header input */
 #input {
     margin: 0;
-    border-top: 1px solid var(--green-medium-md);
+    border-top: 1px solid var(--medium-md);
     border-right: none;
-    border-bottom: 1px solid var(--green-medium-md);
-    border-left: 1px solid var(--green-medium-md);
+    border-bottom: 1px solid var(--medium-md);
+    border-left: 1px solid var(--medium-md);
     border-radius: 0.5rem 0 0 0.5rem;
-    box-shadow: inset 0 2px 6px var(--green-medium-md);
+    box-shadow: inset 0 2px 6px var(--medium-md);
     width: 90%;
     padding: 10px;
     float: left;
     font-size: 16px;
     height: 2.5rem;
     transition: 0.3s;
-    color: var(--green-dark);
-    background-color: var(--green-light);
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 #input:hover {
-    border-top: 2px solid var(--green-medium-md);
+    border-top: 2px solid var(--medium-md);
     border-right: none;
-    border-bottom: 2px solid var(--green-medium-md);
-    border-left: 2px solid var(--green-medium-md);
+    border-bottom: 2px solid var(--medium-md);
+    border-left: 2px solid var(--medium-md);
 }
 
 #input:focus {
     outline: none;
-    border-top: 2px solid var(--green-dark);
+    border-top: 2px solid var(--dark);
     border-right: none;
-    border-bottom: 2px solid var(--green-dark);
-    border-left: 2px solid var(--green-dark);
+    border-bottom: 2px solid var(--dark);
+    border-left: 2px solid var(--dark);
 }
 
 #input::placeholder {
-    color: var(--green-medium);
+    color: var(--medium);
 }
 
 /* Header input add button */
 .add_Btn {
-    border-top: 1px solid var(--green-dark);
-    border-right: 1px solid var(--green-dark);
-    border-bottom: 1px solid var(--green-dark);
+    border-top: 1px solid var(--dark);
+    border-right: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
     border-left: none;
     width: 10%;
-    background-image: linear-gradient(to top, var(--green-dark) 0%, var(--green-dark-md) 100%);
+    background-image: linear-gradient(to top, var(--dark) 0%, var(--dark-md) 100%);
     float: left;
     font-size: 3rem;
     cursor: pointer;
@@ -149,13 +177,13 @@ and edited to mach project
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--green-light);
+    color: var(--light);
     box-shadow: 0px 0px 0px 3px #ffffff00;
     background-clip: padding-box;
 }
 
 .add_Btn:hover {
-    background-image: linear-gradient(to top, var(--green-medium-md ) 0%, var(--green-dark) 100%);
+    background-image: linear-gradient(to top, var(--medium-md ) 0%, var(--dark) 100%);
     cursor: pointer;
     transition: 0.9s ease;
 }
@@ -182,8 +210,8 @@ and edited to mach project
 }
 
 #list_conatiner ul li {
-    background: var(--green-dark);
-    color: var(--green-light);
+    background: var(--dark);
+    color: var(--light);
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -197,17 +225,17 @@ and edited to mach project
   }
   
   #list_conatiner ul li:hover {
-    background: var(--green-dark-md);
+    background: var(--dark-md);
 }
   
 /* List items when clicked on to */
 #list_conatiner ul li.checked {
     background: transparent;
-    color: var(--green-dark-md);
+    color: var(--dark-md);
     text-decoration: line-through;
 }
 .checked i {
-    color: var(--green-dark-md);
+    color: var(--dark-md);
 }
 
 .checked button{
@@ -222,7 +250,7 @@ and edited to mach project
 #list_conatiner ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: var(--green-dark-md);
+    border-color: var(--dark-md);
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
@@ -240,7 +268,7 @@ and edited to mach project
     background: none;
     border: none;
     border-radius: 0 0.5rem 0.5rem 0;
-    color: var(--green-light);
+    color: var(--light);
     padding: 0 10px 0 10px;
     border: 1px solid transparent;
 }
@@ -250,13 +278,13 @@ and edited to mach project
     top: 0;
     bottom: 0;
     background-color: rgb(168, 25, 25);
-    border: 1px solid var(--green-dark-md);
+    border: 1px solid var(--dark-md);
     cursor: pointer;
 }
 
 /* Footer */
 footer {
-    background-color: var(--green-medium);
+    background-color: var(--medium);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -276,7 +304,7 @@ and edited
 
 .icon {
     position: relative;
-    background: var(--green-light);
+    background: var(--light);
     border-radius: 50%;
     margin: 10px;
     width: 30px;
@@ -295,8 +323,8 @@ and edited
     position: absolute;
     top: 0;
     font-size: 14px;
-    background: var(--green-light);
-    color: var(--green-dark-md);
+    background: var(--light);
+    color: var(--dark-md);
     padding: 5px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -310,7 +338,7 @@ and edited
     content: "";
     height: 8px;
     width: 8px;
-    background: var(--green-light);
+    background: var(--light);
     bottom: -3px;
     left: 50%;
     transform: translate(-50%) rotate(45deg);
@@ -332,28 +360,28 @@ and edited
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-    background: var(--green-dark-md);
-    color: var(--green-light);
+    background: var(--dark-md);
+    color: var(--light);
 }
   
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-    background: var(--green-dark-md);
-    color: var(--green-light);
+    background: var(--dark-md);
+    color: var(--light);
 }
 
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-    background: var(--green-dark-md);
-    color: var(--green-light);
+    background: var(--dark-md);
+    color: var(--light);
 }
 .wrapper a {
-    color: var(--green-dark-md);
+    color: var(--dark-md);
 }
 .wrapper a:hover {
-    color: var(--green-light);
+    color: var(--light);
 }
 
 /* Popup */

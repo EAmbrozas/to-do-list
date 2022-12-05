@@ -4,10 +4,12 @@ const addBtn = document.querySelector('.add_Btn');
 const listItems = document.querySelector('#list_items');
 const editBtn = document.querySelector('edit_Btn');
 const closeBtn = document.getElementById('close_Btn');
+const colorTheme = document.getElementById('color_theme');
 
 //Event Listeners
 addBtn.addEventListener("click", addTodo);
 closeBtn.addEventListener("click", hideEditMenu);
+colorTheme.addEventListener('change', changeTheme);
 
 //Functions
 
@@ -62,3 +64,18 @@ function hideEditMenu() {
     popup.style.display = 'none';
 }
 
+/**
+ * Changes color theme depending on what color
+ * is selected in the theme drop down menu
+ */
+function changeTheme() {
+    if (colorTheme.value === 'blue') {
+        document.documentElement.className = ('blue');
+    } else if (colorTheme.value === 'grey') {
+        document.documentElement.className = ('grey');
+    } else if (colorTheme.value === 'pink') {
+        document.documentElement.className = ('pink');
+    } else {
+        document.documentElement.className = ('green');
+    }
+}

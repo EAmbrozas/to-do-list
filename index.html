@@ -46,15 +46,15 @@
                 <ul id="list_items"></ul>
             </div>
        </div>
-       <!-- Popup -->
+       <!-- Popup edit menu -->
        <div id="popup">
             <div id="popup_menu">
                 <label for="color_theme">Color Theme</label>
                 <select name="color_theme" id="color_theme">
-                    <option value="original">Original</option>
-                    <option value="suny">Suny</option>
-                    <option value="nature">Nature</option>
-                    <option value="sky">Sky</option>
+                    <option class="theme_option" onclick="changeTheme()" value="green">Green</option>
+                    <option class="theme_option" onclick="changeTheme()" value="blue">Blue</option>
+                    <option class="theme_option" onclick="changeTheme()" value="grey">Grey</option>
+                    <option class="theme_option" onclick="changeTheme()" value="pink">Pink</option>
                 </select>
                 <label for="font_family">Font</label>
                 <select name="font_family" id="font_family">
@@ -62,10 +62,10 @@
                     <option value="poppins">Poppins</option>
                     <option value="oswald">Oswald</option>
                 </select>
-                <button id="close_Btn">CLOSE</button>
+                <button onclick="hideEditMenu" id="close_Btn">CLOSE</button>
             </div>
-
        </div>
+       <!-- Popup edit menu end -->
     </section>
     <!-- Footer -->
     <footer>
