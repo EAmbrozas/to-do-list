@@ -135,6 +135,7 @@ and edited to mach project
     background-color: var(--medium);
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 #input_container {
@@ -225,7 +226,7 @@ and edited to mach project
 #list_conatiner {
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 2rem 0 5rem;
 }
 
 #list_conatiner ul li {
