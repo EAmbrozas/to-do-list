@@ -2,10 +2,10 @@
 const input = document.querySelector('#input');
 const addBtn = document.querySelector('.add_Btn');
 const listItems = document.querySelector('#list_items');
-const editBtn = document.querySelector('edit_Btn');
 const closeBtn = document.getElementById('close_Btn');
 const colorTheme = document.getElementById('color_theme');
 const fontFamily = document.getElementById('font_family');
+
 
 //Event Listeners
 addBtn.addEventListener("click", addTodo);
@@ -13,11 +13,12 @@ closeBtn.addEventListener("click", hideEditMenu);
 colorTheme.addEventListener('change', changeTheme);
 fontFamily.addEventListener('change', changeFont);
 
+
 //Functions
 
 /**Adds to do list item in list items ul*/
 // Function to add list item
-function addTodo(event) {
+function addTodo() {
     const todoItem = document.createElement('li');
     todoItem.innerText = input.value;
     
@@ -37,7 +38,7 @@ function addTodo(event) {
 
     // Removes list item when the remove button is clicken on to
     removeBtn.addEventListener("click", removeTodo);
-    function removeTodo(event) {
+    function removeTodo() {
         todoItem.remove();
     }
 
