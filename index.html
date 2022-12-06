@@ -8,6 +8,8 @@
     <meta name="keywords" content="task management, to do list, schedule app, thins to be done">
     <title>To Do List</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Sweet alert -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
 </head>
 <body>
     <!-- Header -->
@@ -36,7 +38,7 @@
     <!-- Input with button -->
     <div id="flex_input_container">
         <div id="input_container">
-            <input type="text" id="input" placeholder="Create new list item...">
+            <input pattern="[A-Za]" type="text" id="input" placeholder="Create new list item...">
             <span class="add_Btn"><i class="fa-solid fa-plus"></i></span>
         </div>
     </div>
@@ -97,5 +99,8 @@
 
     <script src="https://kit.fontawesome.com/481ffab01d.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
 </body>
 </html>

@@ -21,9 +21,10 @@ function addTodo(event) {
     const todoItem = document.createElement('li');
     todoItem.innerText = input.value;
     
-    // Alerts the user if the input field is empty
+    // Alerts the user if the input field is empty using sweet alert
     if(input.value === '') {
-        alert('You must write something to create new list item!');
+        swal('You must write something to create new list item!');
+        
     } else {
         listItems.appendChild(todoItem);
     }
@@ -95,3 +96,4 @@ function changeFont() {
         document.body.style.fontFamily = "montserrat";
     }
 }
+

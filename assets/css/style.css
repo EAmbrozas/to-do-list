@@ -234,7 +234,7 @@ and edited to mach project
     color: var(--light);
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 12px 40px;
     list-style-type: none;
     font-size: 18px;
     transition: 0.5s;
