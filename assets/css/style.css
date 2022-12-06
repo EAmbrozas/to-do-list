@@ -34,12 +34,12 @@ body {
 }
 
 :root.grey {
-    --light: #f6f6f6;
-    --light-md: #dadada;
-    --medium: #9c9c9c;
-    --medium-md: #6b6b6b;
-    --dark: #353535;
-    --dark-md: #181818;
+    --light: #F8F9FA;
+    --light-md: #E9ECEF;
+    --medium: #ADB5BD;
+    --medium-md: #6C757D;
+    --dark: #343A40;
+    --dark-md: #212529;
 }
 
 :root.pink {
