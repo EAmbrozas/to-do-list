@@ -90,10 +90,13 @@ function changeTheme() {
 function changeFont() {
     if (fontFamily.value === 'poppins') {
         document.body.style.fontFamily = "poppins";
+        input.style.fontFamily = "poppins";
     } else if (fontFamily.value === 'oswald') {
         document.body.style.fontFamily = "oswald";
+        input.style.fontFamily = "oswald";
     } else {
         document.body.style.fontFamily = "montserrat";
+        input.style.fontFamily = "montserrat";
     }
 }
 
