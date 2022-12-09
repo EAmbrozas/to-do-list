@@ -20,8 +20,13 @@ fontFamily.addEventListener('change', changeFont);
 // Function to add list item
 function addTodo() {
     const todoItem = document.createElement('li');
-    todoItem.innerText = input.value;
     
+
+    // Adds p element to list item with the value of the input
+    const p = document.createElement('p');
+    p.innerText = input.value;
+    todoItem.appendChild(p);
+
     // Alerts the user if the input field is empty using sweet alert
     if(input.value === '') {
         swal('You must write something to create new list item!');

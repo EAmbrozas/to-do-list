@@ -234,7 +234,7 @@ and edited to mach project
     color: var(--light);
     cursor: pointer;
     position: relative;
-    padding: 12px 40px;
+    padding: 0 40px;
     list-style-type: none;
     font-size: 18px;
     transition: 0.5s;
@@ -246,6 +246,11 @@ and edited to mach project
   
   #list_conatiner ul li:hover {
     background: var(--dark-md);
+}
+
+#list_conatiner ul li p {
+    margin: 0;
+    padding: 12px 0;
 }
   
 /* List items when clicked on to */
