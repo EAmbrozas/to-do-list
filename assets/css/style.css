@@ -92,7 +92,7 @@ header #flex_container {
 Taken from https://uiverse.io/barisdogansutcu/lovely-walrus-42
 and edited to mach project
 */
-#edit_Btn {
+#theme_Btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,17 +110,17 @@ and edited to mach project
     transition: all .5s ease;
 }
   
-#edit_Btn:active {
+#theme_Btn:active {
     transform: scale(.9);
     transition: all 100ms ease;
 }
   
-#edit_Btn:hover {
+#theme_Btn:hover {
     box-shadow: 0px 0px 0px 3px var(--dark);
     cursor: pointer;
 }
   
-#edit_Btn svg {
+#theme_Btn svg {
     width: 16px;
 }
 
@@ -231,17 +231,16 @@ and edited to mach project
 
 #list_conatiner ul li {
     background: var(--dark);
-    color: var(--light);
-    cursor: pointer;
     position: relative;
     padding: 0 40px;
     list-style-type: none;
-    font-size: 18px;
     transition: 0.5s;
     margin: 1px 0;
     border-radius: 0.5rem;
-    font-weight: 400; 
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   #list_conatiner ul li:hover {
@@ -251,14 +250,22 @@ and edited to mach project
 #list_conatiner ul li p {
     margin: 0;
     padding: 12px 0;
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 400; 
 }
   
-/* List items when clicked on to */
+/* List items checked style */
 #list_conatiner ul li.checked {
     background: transparent;
+}
+
+#list_conatiner ul li p.checked {
+    
     color: var(--dark-md);
     text-decoration: line-through;
 }
+
 .checked i {
     color: var(--dark-md);
 }
@@ -266,12 +273,12 @@ and edited to mach project
 .checked button{
     border: none;
 }
+
 .checked button:hover {
     background-color: transparent;
     border: none;
 }
 
-  
 #list_conatiner ul li.checked::before {
     content: '';
     position: absolute;
@@ -284,27 +291,29 @@ and edited to mach project
     height: 15px;
     width: 7px;
 }
-
-.remove_Btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: none;
-    border: none;
-    border-radius: 0 0.5rem 0.5rem 0;
-    color: var(--light);
-    padding: 0 10px 0 10px;
-    border: 1px solid transparent;
+/* List items controles */
+.controles {
+    display: flex;
+    gap: 10px;
 }
-.remove_Btn:hover {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgb(168, 25, 25);
-    border: 1px solid var(--dark-md);
-    cursor: pointer;
+
+#list_conatiner ul li button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid var(--dark);
+    background-color: var(--light);
+    color: var(--dark-md);
+}
+
+#list_conatiner ul li button:hover {
+   cursor: pointer;
+   background-color: var(--medium-md);
+   color: var(--light);
+}
+
+#list_conatiner ul li button i {
+    font-size: 1rem;
 }
 
 /* Footer */

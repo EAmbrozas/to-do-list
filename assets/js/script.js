@@ -9,7 +9,7 @@ const fontFamily = document.getElementById('font_family');
 
 //Event Listeners
 addBtn.addEventListener("click", addTodo);
-closeBtn.addEventListener("click", hideEditMenu);
+closeBtn.addEventListener("click", hideThemeMenu);
 colorTheme.addEventListener('change', changeTheme);
 fontFamily.addEventListener('change', changeFont);
 
@@ -35,11 +35,34 @@ function addTodo() {
         listItems.appendChild(todoItem);
     }
 
-    // Appends remove button for each list item
+     // Appends controles span for each list item
+    const controles = document.createElement('span');
+    controles.classList.add('controles');
+    todoItem.appendChild(controles);
+
+    // Appends check button to controles span
+    const checkBtn = document.createElement('button');
+    checkBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+    checkBtn.classList.add('check_Btn');
+    controles.appendChild(checkBtn);
+
+    // Appends remove button to controles span
     const removeBtn = document.createElement('button');
     removeBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     removeBtn.classList.add('remove_Btn');
-    todoItem.appendChild(removeBtn);
+    controles.appendChild(removeBtn);
+
+    // Appends edit button to controles span
+    const editBtn = document.createElement('button');
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+    editBtn.classList.add('edit_Btn');
+    controles.appendChild(editBtn);
+
+    // Appends drag button to controles span
+    const dragBtn = document.createElement('button');
+    dragBtn.innerHTML = '<i class="fa-solid fa-list"></i>';
+    dragBtn.classList.add('drag_Btn');
+    controles.appendChild(dragBtn);
 
     // Removes list item when the remove button is clicken on to
     removeBtn.addEventListener("click", removeTodo);
@@ -51,16 +74,17 @@ function addTodo() {
     input.value = '';
 
     // Toggle list item to checked when clicked on to
-    todoItem.addEventListener("click", checked);
+    checkBtn.addEventListener("click", checked);
     function checked() {
         todoItem.classList.toggle('checked');
+        p.classList.toggle('checked');
     }
 }
 
 /**
  * Displayes edit menu when clicked on the edit button
  */
-function showEditMenu() {
+function showThemeMenu() {
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
 }
@@ -68,7 +92,7 @@ function showEditMenu() {
 /**
  * Hide edit menu when clicked on the close button
  */
-function hideEditMenu() {
+function hideThemeMenu() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
 }
