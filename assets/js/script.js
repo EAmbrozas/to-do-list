@@ -20,12 +20,6 @@ fontFamily.addEventListener('change', changeFont);
 // Function to add list item
 function addTodo() {
     const todoItem = document.createElement('li');
-    
-
-    // Adds p element to list item with the value of the input
-    const p = document.createElement('p');
-    p.innerText = input.value;
-    todoItem.appendChild(p);
 
     // Alerts the user if the input field is empty using sweet alert
     if(input.value === '') {
@@ -34,6 +28,18 @@ function addTodo() {
     } else {
         listItems.appendChild(todoItem);
     }
+
+    // Adds p element to list item with the value of the input
+    const todoItemInput = document.createElement('input');
+    todoItemInput.classList.add('todo_item_input');
+    todoItemInput.value = input.value;
+    todoItemInput.disabled = true;
+
+    // Appends controles span for each list item
+    const text = document.createElement('span');
+    text.classList.add('text');
+    todoItem.appendChild(text);
+    text.appendChild(todoItemInput);
 
      // Appends controles span for each list item
     const controles = document.createElement('span');
@@ -64,20 +70,34 @@ function addTodo() {
     dragBtn.classList.add('drag_Btn');
     controles.appendChild(dragBtn);
 
-    // Removes list item when the remove button is clicken on to
+    // Removes input value when the add button is clicked on to
+    input.value = '';
+
+    // Toggles list item to checked when checked button is clicked on to
+    checkBtn.addEventListener("click", checked);
+    function checked() {
+        todoItem.classList.toggle('checked');
+        todoItemInput.classList.toggle('checked');
+
+    }
+
+    // Removes list item when the remove button is clicked on to
     removeBtn.addEventListener("click", removeTodo);
     function removeTodo() {
         todoItem.remove();
     }
+    // Toggles list item to edit when the edit button is clicked on to
+    editBtn.addEventListener("click", editTodo);
+    function editTodo() {
 
-    // Removes input value when the add button is clicked on to
-    input.value = '';
-
-    // Toggle list item to checked when clicked on to
-    checkBtn.addEventListener("click", checked);
-    function checked() {
-        todoItem.classList.toggle('checked');
-        p.classList.toggle('checked');
+       if (todoItemInput.disabled == true) {
+            todoItemInput.disabled = false;
+            todoItemInput.classList.add('todo_item_input_enabled');
+        
+       } else {
+            todoItemInput.disabled = true;
+            todoItemInput.classList.remove('todo_item_input_enabled');
+       }    
     }
 }
 

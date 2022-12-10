@@ -232,7 +232,7 @@ and edited to mach project
 #list_conatiner ul li {
     background: var(--dark);
     position: relative;
-    padding: 0 40px;
+    padding: 0.5rem 40px;
     list-style-type: none;
     transition: 0.5s;
     margin: 1px 0;
@@ -247,12 +247,29 @@ and edited to mach project
     background: var(--dark-md);
 }
 
-#list_conatiner ul li p {
-    margin: 0;
-    padding: 12px 0;
+.text {
+    width: 65%;
+}
+
+.todo_item_input{
     color: var(--light);
+    background-color: var(--dark);
     font-size: 18px;
     font-weight: 400; 
+    z-index: 3;
+    border: none;
+    background-color: inherit;
+    width: 100%;
+}
+
+.todo_item_input_enabled {
+    color: var(--dark-md)!important;
+    background: var(--light)!important;
+    font-size: 18px;
+    font-weight: 400; 
+    z-index: 3;
+    border: none;
+    background-color: inherit;
 }
   
 /* List items checked style */
@@ -260,18 +277,9 @@ and edited to mach project
     background: transparent;
 }
 
-#list_conatiner ul li p.checked {
-    
-    color: var(--dark-md);
+#list_conatiner ul li input.checked {
     text-decoration: line-through;
-}
-
-.checked i {
     color: var(--dark-md);
-}
-
-.checked button{
-    border: none;
 }
 
 .checked button:hover {
