@@ -29,7 +29,7 @@ function addTodo() {
         listItems.appendChild(todoItem);
     }
 
-    // Adds p element to list item with the value of the input
+    // Adds input element as a todo item to list item with the value of the input value
     const todoItemInput = document.createElement('input');
     todoItemInput.classList.add('todo_item_input');
     todoItemInput.value = input.value;

@@ -282,11 +282,6 @@ and edited to mach project
     color: var(--dark-md);
 }
 
-.checked button:hover {
-    background-color: transparent;
-    border: none;
-}
-
 #list_conatiner ul li.checked::before {
     content: '';
     position: absolute;
