@@ -65,12 +65,6 @@ function addTodo() {
     editBtn.classList.add('edit_Btn');
     controles.appendChild(editBtn);
 
-    // Appends drag button to controles span
-    const dragBtn = document.createElement('button');
-    dragBtn.innerHTML = '<i class="fa-solid fa-list"></i>';
-    dragBtn.classList.add('drag_Btn');
-    controles.appendChild(dragBtn);
-
     // Removes input value when the add button is clicked on to
     input.value = '';
 
