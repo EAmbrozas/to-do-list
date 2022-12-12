@@ -442,7 +442,7 @@ and edited
 
 #popup_menu {
     max-width: 300px;
-    height: 260px;
+    height: 280px;
     background-color: var(--medium);
     position: absolute;
     top: 0;

@@ -5,6 +5,7 @@ const listItems = document.querySelector('#list_items');
 const closeBtn = document.getElementById('close_Btn');
 const colorTheme = document.getElementById('color_theme');
 const fontFamily = document.getElementById('font_family');
+const themeBtn = document.getElementById('theme_Btn');
 
 
 //Event Listeners
@@ -12,6 +13,7 @@ addBtn.addEventListener("click", addTodo);
 closeBtn.addEventListener("click", hideThemeMenu);
 colorTheme.addEventListener('change', changeTheme);
 fontFamily.addEventListener('change', changeFont);
+themeBtn.addEventListener('click', showThemeMenu);
 
 
 //Functions
