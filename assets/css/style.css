@@ -516,6 +516,11 @@ select {
         padding: 0 5vw;
     }
 
+    /* Main section */
+    #section_background_img{
+    background-image: url('../images/mobile-background.webp');
+}
+
     /* Text elements */
     h1 {
         font-size: 1.8rem;
