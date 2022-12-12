@@ -19,7 +19,7 @@ fontFamily.addEventListener('change', changeFont);
 /**Adds to do list item in list items ul*/
 // Function to add list item
 function addTodo() {
-    const todoItem = document.createElement('li');
+    let todoItem = document.createElement('li');
 
     // Alerts the user if the input field is empty using sweet alert
     if(input.value === '') {
@@ -45,6 +45,7 @@ function addTodo() {
     const controles = document.createElement('span');
     controles.classList.add('controles');
     todoItem.appendChild(controles);
+    controles.style.visibility = 'hidden';
 
     // Appends check button to controles span
     const checkBtn = document.createElement('button');
@@ -64,12 +65,6 @@ function addTodo() {
     editBtn.classList.add('edit_Btn');
     controles.appendChild(editBtn);
 
-    // Appends drag button to controles span
-    const dragBtn = document.createElement('button');
-    dragBtn.innerHTML = '<i class="fa-solid fa-list"></i>';
-    dragBtn.classList.add('drag_Btn');
-    controles.appendChild(dragBtn);
-
     // Removes input value when the add button is clicked on to
     input.value = '';
 
@@ -80,6 +75,18 @@ function addTodo() {
         todoItemInput.classList.toggle('checked');
 
     }
+
+    // Display todo list item controls on mouse over
+    todoItem.addEventListener('mouseover', showControles);
+    function showControles() {
+    controles.style.visibility = 'visible';
+}
+
+    // Hide todo list item controls on mouse leave
+    todoItem.addEventListener('mouseleave', hideControles);
+    function hideControles() {
+    controles.style.visibility = 'hidden';
+}
 
     // Removes list item when the remove button is clicked on to
     removeBtn.addEventListener("click", removeTodo);

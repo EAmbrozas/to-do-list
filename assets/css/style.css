@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -307,7 +308,7 @@ and edited to mach project
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: 2px solid var(--dark);
+    border: 2px solid var(--dark-md);
     background-color: var(--light);
     color: var(--dark-md);
 }
@@ -330,6 +331,7 @@ footer {
     left: 0;
     right: 0;
 }
+
 /* Footer icons 
 Taken from https://uiverse.io/david-mohseni/brave-shrimp-86
 and edited
@@ -420,6 +422,7 @@ and edited
 .wrapper a {
     color: var(--dark-md);
 }
+
 .wrapper a:hover {
     color: var(--light);
 }
@@ -490,15 +493,15 @@ select {
     }
 
     /* Input container */
-#flex_input_container {
+    #flex_input_container {
     padding: 0 5vw;
-    
-}
+    }
 
     header #flex_container {
         gap: 0.5rem;
         padding: 2rem 0 1rem 0;
     }
+
     /* Edit button */
     #edit_Btn {
         gap: 5px;
@@ -506,6 +509,7 @@ select {
         letter-spacing: 1px;
         min-height: 23px;
     }
+    
     /* Main section */
     #section_background_color {
         padding: 0 5vw;
