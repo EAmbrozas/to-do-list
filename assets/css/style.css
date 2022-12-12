@@ -212,7 +212,7 @@ and edited to mach project
 
 /* Main section */
 #section_background_img{
-    background-image: url('../images/background_image1.webp');
+    background-image: url('../images/background_image.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
