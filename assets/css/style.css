@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
 /* Colors */
@@ -509,7 +510,7 @@ select {
         letter-spacing: 1px;
         min-height: 23px;
     }
-    
+
     /* Main section */
     #section_background_color {
         padding: 0 5vw;
