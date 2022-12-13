@@ -24,7 +24,9 @@
     - [HTML Validation](#html)
     - [CSS Validation](#css)
     - [JS Validation](#js)
+    - [Manual Testing](#manual-testing)
     - [Further Testing](#further-testing)
+    - [Fixed issues found during testing](#fixed)
 - [Deployment](#deployment)
     - [Project Creation](#project-creation)
     - [Start Project in Gitpod](#start-project)
@@ -121,70 +123,70 @@
 <h2 id="technologies">Technologies</h2><hr>
 <h3 id="languages">Languages Used</h3>
 <ul>
-    <li><a href="https://en.wikipedia.org/wiki/HTML">HTML5</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/CSS">CSS3</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML5</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
 </ul>
 
 <h2 id="flp">Frameworks, Libraries & Programs Used</h2><hr>
 <ul>
-    <li><a href="https://fonts.google.com/">Google Fonts</a>
+    <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
         <ul>
             <li>Google fonts were used to import the 'Roboto Serif' font into the style.css file which is used on all text elements.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://fontawesome.com/">Font Awesome</a>
+    <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
         <ul>
             <li>Font Awesome was used for social links and google review button.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://git-scm.com/">Git</a>
+    <li><a href="https://git-scm.com/" target="_blank">Git</a>
         <ul>
             <li>Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://github.com/">GitHub</a>
+    <li><a href="https://github.com/" target="_blank">GitHub</a>
         <ul>
             <li>GitHub was used to store the projects code after being pushed from Git.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://www.adobe.com/ie/products/photoshop-lightroom.html?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVOjH4dPSEF5YUvt-cy_GQOAe-YZNeQC-b-f9an8MbE2ZYIu9-4XgyEaAsQaEALw_wcB&mv=search&mv=search&sdid=L7NVTQ8Y&ef_id=Cj0KCQjwnvOaBhDTARIsAJf8eVOjH4dPSEF5YUvt-cy_GQOAe-YZNeQC-b-f9an8MbE2ZYIu9-4XgyEaAsQaEALw_wcB:G:s&s_kwcid=AL!3085!3!547896439650!e!!g!!adobe%20lightroom!1423511177!58810487274">Adobe Lightroom</a>
+    <li><a href="https://www.adobe.com/ie/products/photoshop-lightroom.html?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVOjH4dPSEF5YUvt-cy_GQOAe-YZNeQC-b-f9an8MbE2ZYIu9-4XgyEaAsQaEALw_wcB&mv=search&mv=search&sdid=L7NVTQ8Y&ef_id=Cj0KCQjwnvOaBhDTARIsAJf8eVOjH4dPSEF5YUvt-cy_GQOAe-YZNeQC-b-f9an8MbE2ZYIu9-4XgyEaAsQaEALw_wcB:G:s&s_kwcid=AL!3085!3!547896439650!e!!g!!adobe%20lightroom!1423511177!58810487274" target="_blank">Adobe Lightroom</a>
         <ul>
             <li>Adobe Lightroom was used to add color preset for all photos.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://www.adobe.com/ie/products/photoshop.html?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVO3rRHxJnLt7dFLsz9rBsMrQoVGoDK5svXE0qzu0eMgLEzLGhT-dPgaAofzEALw_wcB&mv=search&mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQjwnvOaBhDTARIsAJf8eVO3rRHxJnLt7dFLsz9rBsMrQoVGoDK5svXE0qzu0eMgLEzLGhT-dPgaAofzEALw_wcB:G:s&s_kwcid=AL!3085!3!441704131147!e!!g!!adobe%20photoshop!1423511192!58810496314">Adobe Photoshop</a>
+    <li><a href="https://www.adobe.com/ie/products/photoshop.html?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVO3rRHxJnLt7dFLsz9rBsMrQoVGoDK5svXE0qzu0eMgLEzLGhT-dPgaAofzEALw_wcB&mv=search&mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQjwnvOaBhDTARIsAJf8eVO3rRHxJnLt7dFLsz9rBsMrQoVGoDK5svXE0qzu0eMgLEzLGhT-dPgaAofzEALw_wcB:G:s&s_kwcid=AL!3085!3!441704131147!e!!g!!adobe%20photoshop!1423511192!58810496314" target="_blank">Adobe Photoshop</a>
         <ul>
             <li>Adobe Photoshop was used to resize all the images.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://www.adobe.com/uk/products/xd.html">Adobe XD</a>
+    <li><a href="https://www.adobe.com/uk/products/xd.html" target="_blank">Adobe XD</a>
         <ul>
             <li>Adobe XD was used to create the prototype of the website.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://www.gitpod.io/">Gitpod</a>
+    <li><a href="https://www.gitpod.io/" target="_blank">Gitpod</a>
         <ul>
             <li>Gitpod was used to develop the website.</li>
         </ul>
     </li>
 </ul>
 <ul>
-    <li><a href="https://sweetalert2.github.io/">Sweet alert</a>
+    <li><a href="https://sweetalert2.github.io/" target="_blank">Sweet alert</a>
         <ul>
             <li>Sweet Alert was used to inform the user that the input is empty while adding a list item with an empty input.</li>
         </ul>
@@ -204,9 +206,31 @@
 <h3 id="js">JS Validation</h3>
 <img src="./assets/readme/js-validation.webp">
 
+<h3 id="manual-testing">Manual Testing</h3>
+<ul>
+    <li><a href="https://youtu.be/kciy9pvKW2o" target="_blank">Test video </a>Responsiveness was tested using google chrome dev tools for desktop, tablet and mobile device.</li>
+    <li><a href="https://youtu.be/Gn2vCe2qrqE" target="_blank">Test video </a>All links to external websites were tested that they are opening up on a new tab by clicking on each one of them.</li>
+    <li><a href="https://youtu.be/S8hMzuJjaI0" target="_blank">Test video </a>The themes pop-up menu button was tested by clicking on the button and visualy checking if the menu will open up on the screen.</li>
+    <li><a href="https://youtu.be/VEtvQUg1MNE" target="_blank">Test video </a>The test was done by navigating to themes menu and selecting each color theme option and visually inspect if there were changes made to color theme.</li>
+    <li><a href="https://youtu.be/xjLY78MXA5g" target="_blank">Test video </a>The test was done by navigating to themes menu and selecting each font type  option and visually inspect if there were changes made to font.</li>
+    <li><a href="https://youtu.be/KPDpOIN0GVU" target="_blank">Test video </a>The test was conducted by trying to add a todo list item while the input was empty.</li>
+    <li><a href="https://youtu.be/cMx8Gj5ipzw" target="_blank">Test video </a>The test was carried out by entering the text in the input and selecting the add todo button./li>
+    <li><a href="https://youtu.be/cJDsTsPp7EM" target="_blank">Test video </a>The test was carried out by  simply hovering over each item on the todo list. The control menu would appear as soon as the mouse was over the todo list item./li>
+    <li><a href="https://youtu.be/3y8Dv91pWrQ">Test video </a>The test was carried out by clicking on the check button next to each item on the todo list. When the button is clicked on the selected task, the task's style is changed to checked./li>
+    <li><a href="https://youtu.be/eINIbplCiXw" target="_blank">Test video </a>Each task on the to-do list included an edit button, which was used to perform the test. When the user clicks the edit button on the selected task, the input for the list items toggles to enabled, enabling them to change the task's text. If they click the button again, the input changes to disabled./li>
+    <li><a href="https://youtu.be/9v_giEijWf4" target="_blank">Test video </a>The test was carried out by clicking on the delete button next to each todo list item, which removed the todo item./li>
+</ul>
+
+<h3 id="fixed">Fixed issues found during testing</h3>
+<ul>
+    <li>The background image on the website was of a high resolution, resulting in performance drop on mobile devices : Fixed by changing the size and format of the image.</li>
+    <li>The background image on the website was of a high resolution, resulting in performance drop on mobile devices : Fixed by changing the size and format of the image.</li>
+    <li>Uncaught ReferenceError: hideEditMenu is not defined at HTMLButtonElement.onclick ((index):77:65) : Fixed by removing the onclick attribute in html file on line 77 for popup close button. </li>
+</ul>
+
 <h3 id="further-testing">Further Testing</h3>
 <ul>
-    <li>Responsiveness was tested using <a href="https://ui.dev/amiresponsive?url=https://eambrozas.github.io/to-do-list/">ui.dev</a></li>
+    <li>Responsiveness was tested using <a href="https://ui.dev/amiresponsive?url=https://eambrozas.github.io/to-do-list/" target="_blank">ui.dev</a></li>
     <li>The Website was tested on Google Chrome, Microsoft Edge and Firefox browsers.</li>
     <li>The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy s9, Galaxy a13, Galaxy a50s.</li>
     <li>Every link on the website was testes that it is linked correctly.</li>
@@ -222,13 +246,13 @@
 <h3 id="project-creation">Project Creation</h3>
 <ul>
     <li>
-    I used <a href="https://github.com/Code-Institute-Org/gitpod-full-template">Code Institute Template</a> to start the project by clicking on a 'Use this template' dropdown menu and selecting 'Create a new repository'. I gave it a repository name 'to-do-list', checked the Include all branches checkbox and clicked on a green button called 'Create repository from template' to create repository.
+    I used <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank">Code Institute Template</a> to start the project by clicking on a 'Use this template' dropdown menu and selecting 'Create a new repository'. I gave it a repository name 'to-do-list', checked the Include all branches checkbox and clicked on a green button called 'Create repository from template' to create repository.
     </li>
 </ul>
 
 <h3 id="start-project">Start Project in Gitpod</h3>
 <ol>
-    <li>Navigate to the Github <a href="https://github.com/EAmbrozas/to-do-list">repository</a>.</li>
+    <li>Navigate to the Github <a href="https://github.com/EAmbrozas/to-do-list" target="_blank">repository</a>.</li>
     <li>Clik green 'Gitpod' button.</li>
 </ol>
 
@@ -241,7 +265,7 @@
 
 <h3 id="github-pages">GitHub Pages</h3>
 <ol>
-    <li>Navigate to <a href="https://github.com/EAmbrozas/to-do-list">GitHub</a> repository.</li>
+    <li>Navigate to <a href="https://github.com/EAmbrozas/to-do-list" target="_blank">GitHub</a> repository.</li>
     <li>Go to Settings > Pages.</li>
     <li>Select main branche as the source.</li>
     <li>Click 'save' button.</li>
