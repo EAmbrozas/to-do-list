@@ -21,7 +21,7 @@ themeBtn.addEventListener('click', showThemeMenu);
 /**Adds to do list item in list items ul*/
 // Function to add list item
 function addTodo() {
-    let todoItem = document.createElement('li');
+    const todoItem = document.createElement('li');
 
     // Alerts the user if the input field is empty using sweet alert
     if(input.value === '') {
@@ -75,7 +75,6 @@ function addTodo() {
     function checked() {
         todoItem.classList.toggle('checked');
         todoItemInput.classList.toggle('checked');
-
     }
 
     // Display todo list item controls on mouse over
@@ -95,6 +94,7 @@ function addTodo() {
     function removeTodo() {
         todoItem.remove();
     }
+
     // Toggles list item to edit when the edit button is clicked on to
     editBtn.addEventListener("click", editTodo);
     function editTodo() {
@@ -158,4 +158,3 @@ function changeFont() {
         input.style.fontFamily = "montserrat";
     }
 }
-
