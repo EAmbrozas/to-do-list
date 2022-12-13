@@ -296,6 +296,7 @@ and edited to mach project
     height: 15px;
     width: 7px;
 }
+
 /* List items controles */
 .controles {
     display: flex;
@@ -420,6 +421,7 @@ and edited
     background: var(--dark-md);
     color: var(--light);
 }
+
 .wrapper a {
     color: var(--dark-md);
 }
@@ -495,7 +497,7 @@ select {
 
     /* Input container */
     #flex_input_container {
-    padding: 0 5vw;
+        padding: 0 5vw;
     }
 
     header #flex_container {
@@ -518,7 +520,7 @@ select {
 
     /* Main section */
     #section_background_img{
-    background-image: url('../images/mobile-background.webp');
+        background-image: url('../images/mobile-background.webp');
 }
 
     /* Text elements */
