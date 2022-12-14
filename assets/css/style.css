@@ -234,7 +234,7 @@ and edited to mach project
 #list_conatiner ul li {
     background: var(--dark);
     position: relative;
-    padding: 1.5rem 40px 1rem;
+    padding: 1rem 40px 1rem;
     list-style-type: none;
     transition: 0.5s;
     margin-bottom: 20px;
@@ -295,6 +295,7 @@ and edited to mach project
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+    margin-top: 5px;
 }
 
 /* List items controles */

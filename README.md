@@ -84,7 +84,7 @@
 <ul>
     <li>An edit, remove, and check button will be present next to each item on the to-do list.</li>
     <li>By using the check button, the user may mark completed to-do items and change their appearance.</li>
-    <li>The to do item can be taken off the list using the remove button.</li>
+    <li>The to-do item can be taken off the list using the remove button.</li>
     <li>The user can retype their task by clicking the Edit button.</li>
 </ul> 
 
@@ -218,14 +218,7 @@
     <li><a href="https://youtu.be/cJDsTsPp7EM" target="_blank">Test video </a>The test was carried out by  simply hovering over each item on the todo list. The control menu would appear as soon as the mouse was over the todo list item./li>
     <li><a href="https://youtu.be/3y8Dv91pWrQ">Test video </a>The test was carried out by clicking on the check button next to each item on the todo list. When the button is clicked on the selected task, the task's style is changed to checked./li>
     <li><a href="https://youtu.be/eINIbplCiXw" target="_blank">Test video </a>Each task on the to-do list included an edit button, which was used to perform the test. When the user clicks the edit button on the selected task, the input for the list items toggles to enabled, enabling them to change the task's text. If they click the button again, the input changes to disabled./li>
-    <li><a href="https://youtu.be/9v_giEijWf4" target="_blank">Test video </a>The test was carried out by clicking on the delete button next to each todo list item, which removed the todo item./li>
-</ul>
-
-<h3 id="fixed">Fixed issues found during testing</h3>
-<ul>
-    <li>The background image on the website was of a high resolution, resulting in performance drop on mobile devices : Fixed by changing the size and format of the image.</li>
-    <li>The background image on the website was of a high resolution, resulting in performance drop on mobile devices : Fixed by changing the size and format of the image.</li>
-    <li>Uncaught ReferenceError: hideEditMenu is not defined at HTMLButtonElement.onclick ((index):77:65) : Fixed by removing the onclick attribute in html file on line 77 for popup close button. </li>
+    <li><a href="https://youtu.be/9v_giEijWf4" target="_blank">Test video </a>The test was carried out by clicking on the delete button next to each todo list item, which removed the todo item.</li>
 </ul>
 
 <h3 id="further-testing">Further Testing</h3>
@@ -240,6 +233,23 @@
     <li>CSS was checked by CSS Validation Service.</li>
     <li>JavaScript validator was used to validate JavaScript.</li>
     <li>Console log was used throughout the building process to check if there were any errors.</li>
+</ul>
+
+<h3 id="fixed">Fixed issues found during testing</h3>
+<ul>
+    <li>The background image on the website was of a high resolution, resulting in performance drop on mobile devices : Fixed by changing the size and format of the image.</li>
+    <li>The check mark was not correctly aligned with the task: To-do list item padding and the top margin for the checkmark were changed to fix the issue.</li>
+    <li>Uncaught ReferenceError: hideEditMenu is not defined at HTMLButtonElement.onclick ((index):77:65) : Fixed by removing the onclick attribute in html file on line 77 for popup close button.</li>
+</ul>
+
+<h3 id="errors">Errors and warnings</h3>
+<ul>
+    <li>These were warnings generated in css validator due to sweet alert css link that I decided to ignore as it was not cosing any issues.
+        <br><img src="./assets/readme/css-validation-warning.webp">
+    </li>
+    <li>I was receiving an undefined variable for sweet alert while checking the JS file on jshint.com and a few of other websites. But since there were no errors and everything was operating as it should, it was ignored.
+        <br><img src="./assets/readme/js-validation-warning.webp">
+    </li>
 </ul>
 
 <h2 id="deployment">Deployment</h2><hr>
