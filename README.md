@@ -309,7 +309,7 @@
 
 <h2 id="acknowledgements">Acknowledgements</h2><hr>
 <ul>
-    <li>A bery big thanks to my Mentor Ronan for valuable feedback.</li>
+    <li>A very big thanks to my Mentor Ronan for valuable feedback.</li>
     <li>My Cohort lead Kasia for support.</li>
     <li>All the people that invested their time to review and test UI/UX of the project.</li>
 </ul>
