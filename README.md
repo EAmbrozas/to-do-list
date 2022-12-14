@@ -27,6 +27,7 @@
     - [Manual Testing](#manual-testing)
     - [Further Testing](#further-testing)
     - [Fixed issues found during testing](#fixed)
+    - [Errors and warnings](#errors)
 - [Deployment](#deployment)
     - [Project Creation](#project-creation)
     - [Start Project in Gitpod](#start-project)
@@ -34,6 +35,7 @@
     - [GitHub Pages](#github-pages)
     - [Git commands](#git-commands)
 - [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
    
    
 <h2 id="ux">User Experience (UX)</h2><hr>
@@ -291,3 +293,15 @@
 </ul>
 
 <h2 id="credits">Credits</h2>
+<ul>
+    <li><a href="https://webdesign.tutsplus.com/tutorials/color-schemes-with-css-variables-and-javascript--cms-36989" target="_blank">webdesign.tutsplus.com</a> On how to change the website to different colort themes.</li>
+    <li><a href="https://uiverse.io/" target="_blank">UNIVERSE</a> For nicely styled button that were used in the project.</li>
+    <li><a href="https://www.pexels.com/" target="_blank">PEXELS</a> For the image that was used in the project.</li>
+</ul>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<ul>
+    <li>A bery big thanks to my Mentor Ronan for valuable feedback.</li>
+    <li>My Cohort lead Kasia for support.</li>
+    <li>All the people that invested their time to review and test UI/UX of the project.</li>
+</ul>
