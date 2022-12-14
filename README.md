@@ -34,6 +34,7 @@
     - [Run Project Live Preview](#live-preview)
     - [GitHub Pages](#github-pages)
     - [Git commands](#git-commands)
+- [Future Features](#future-features)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
    
@@ -292,14 +293,21 @@
     <li>git push - upload local repository content to a remote repository.</li>
 </ul>
 
-<h2 id="credits">Credits</h2>
+<h2 id="future-features">Future Features</h2><hr>
+<ul>
+    <li>Add local storage or something similar.</li>
+    <li>Add the ability to set date and time for each todo list item.</li>
+    <li>Add a drop down menu that can filter between different types of tasks. For example checked and unchecked.</li>
+</ul>
+
+<h2 id="credits">Credits</h2><hr>
 <ul>
     <li><a href="https://webdesign.tutsplus.com/tutorials/color-schemes-with-css-variables-and-javascript--cms-36989" target="_blank">webdesign.tutsplus.com</a> On how to change the website to different colort themes.</li>
     <li><a href="https://uiverse.io/" target="_blank">UNIVERSE</a> For nicely styled button that were used in the project.</li>
     <li><a href="https://www.pexels.com/" target="_blank">PEXELS</a> For the image that was used in the project.</li>
 </ul>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="acknowledgements">Acknowledgements</h2><hr>
 <ul>
     <li>A bery big thanks to my Mentor Ronan for valuable feedback.</li>
     <li>My Cohort lead Kasia for support.</li>
