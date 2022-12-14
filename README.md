@@ -211,17 +211,17 @@
 
 <h3 id="manual-testing">Manual Testing</h3>
 <ul>
-    <li><a href="https://youtu.be/kciy9pvKW2o" target="_blank">Test video </a>Responsiveness was tested using google chrome dev tools for desktop, tablet and mobile device.</li>
-    <li><a href="https://youtu.be/Gn2vCe2qrqE" target="_blank">Test video </a>All links to external websites were tested that they are opening up on a new tab by clicking on each one of them.</li>
-    <li><a href="https://youtu.be/S8hMzuJjaI0" target="_blank">Test video </a>The themes pop-up menu button was tested by clicking on the button and visualy checking if the menu will open up on the screen.</li>
-    <li><a href="https://youtu.be/VEtvQUg1MNE" target="_blank">Test video </a>The test was done by navigating to themes menu and selecting each color theme option and visually inspect if there were changes made to color theme.</li>
-    <li><a href="https://youtu.be/xjLY78MXA5g" target="_blank">Test video </a>The test was done by navigating to themes menu and selecting each font type  option and visually inspect if there were changes made to font.</li>
-    <li><a href="https://youtu.be/KPDpOIN0GVU" target="_blank">Test video </a>The test was conducted by trying to add a todo list item while the input was empty.</li>
-    <li><a href="https://youtu.be/cMx8Gj5ipzw" target="_blank">Test video </a>The test was carried out by entering the text in the input and selecting the add todo button./li>
-    <li><a href="https://youtu.be/cJDsTsPp7EM" target="_blank">Test video </a>The test was carried out by  simply hovering over each item on the todo list. The control menu would appear as soon as the mouse was over the todo list item./li>
-    <li><a href="https://youtu.be/3y8Dv91pWrQ">Test video </a>The test was carried out by clicking on the check button next to each item on the todo list. When the button is clicked on the selected task, the task's style is changed to checked./li>
-    <li><a href="https://youtu.be/eINIbplCiXw" target="_blank">Test video </a>Each task on the to-do list included an edit button, which was used to perform the test. When the user clicks the edit button on the selected task, the input for the list items toggles to enabled, enabling them to change the task's text. If they click the button again, the input changes to disabled./li>
-    <li><a href="https://youtu.be/9v_giEijWf4" target="_blank">Test video </a>The test was carried out by clicking on the delete button next to each todo list item, which removed the todo item.</li>
+    <li><a href="https://youtu.be/kciy9pvKW2o" target="_blank">Responsiveness</a>Responsiveness was tested using google chrome dev tools for desktop, tablet and mobile device.</li>
+    <li><a href="https://youtu.be/Gn2vCe2qrqE" target="_blank">External links </a>All links to external websites were tested that they are opening up on a new tab by clicking on each one of them.</li>
+    <li><a href="https://youtu.be/S8hMzuJjaI0" target="_blank">Themes button </a>The themes pop-up menu button was tested by clicking on the button and visualy checking if the menu will open up on the screen.</li>
+    <li><a href="https://youtu.be/VEtvQUg1MNE" target="_blank">Color themes selection</a>The test was done by navigating to themes menu and selecting each color theme option and visually inspect if there were changes made to color theme.</li>
+    <li><a href="https://youtu.be/xjLY78MXA5g" target="_blank">Font types selection</a>The test was done by navigating to themes menu and selecting each font type  option and visually inspect if there were changes made to font.</li>
+    <li><a href="https://youtu.be/KPDpOIN0GVU" target="_blank">Sweet alert </a>The test was conducted by trying to add a todo list item while the input was empty.</li>
+    <li><a href="https://youtu.be/cMx8Gj5ipzw" target="_blank">Adding todo item </a>The test was carried out by entering the text in the input and selecting the add todo button./li>
+    <li><a href="https://youtu.be/cJDsTsPp7EM" target="_blank">Todo list item controles </a>The test was carried out by  simply hovering over each item on the todo list. The control menu would appear as soon as the mouse was over the todo list item./li>
+    <li><a href="https://youtu.be/3y8Dv91pWrQ" target="_blank">Check button </a>The test was carried out by clicking on the check button next to each item on the todo list. When the button is clicked on the selected task, the task's style is changed to checked./li>
+    <li><a href="https://youtu.be/eINIbplCiXw" target="_blank">Edit button </a>Each task on the to-do list included an edit button, which was used to perform the test. When the user clicks the edit button on the selected task, the input for the list items toggles to enabled, enabling them to change the task's text. If they click the button again, the input changes to disabled./li>
+    <li><a href="https://youtu.be/9v_giEijWf4" target="_blank">Delete button </a>The test was carried out by clicking on the delete button next to each todo list item, which removed the todo item.</li>
 </ul>
 
 <h3 id="further-testing">Further Testing</h3>
